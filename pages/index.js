@@ -47,22 +47,6 @@ function getAllStudentWithBiggerPoint(datas) {
 }
 
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>FEBE 03 - LEADERBOARDS</title>
-      </Head>
-
-      <main>
-        <div className="center-screen">
-          Hello 😁 you are a best student. <br /> Thank you for your support,
-          but i need to remove this site for some reason. <br />
-          Sorry for the inconvenience.
-        </div>
-      </main>
-    </div>
-  )
-
   let { data, isLoading, isError } = useApi("/api/cohort")
   const [allStudents, setAllStudents] = useState([])
   const [topStudents, setTopStudents] = useState([])
